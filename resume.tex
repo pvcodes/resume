@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+\item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}
+\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=0.15in, label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{
+\end{itemize}}
+\newcommand{\resumeItemListStart}{
+\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{
+\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Pranjal Verma} \\ \vspace{1pt}
+  \small \href{tel:+918933890606}{\underline{+91 8933890606}} $|$
+  \href{mailto:pranjalverma6060@gmail.com}{\underline{pranjalverma6060@gmail.com}} $|$
+  \href{https://linkedin.com/in/pvcodes}{\underline{linkedin.com/in/pvcodes}} $|$
+  \href{https://github.com/pvcodes}{\underline{github.com/pvcodes}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Data Engineer with 2+ years of experience building and optimizing data pipelines on cloud-native infrastructure, on-premise clusters, and Databricks - delivering up to 60\% improvement in query performance and 35\% reduction in cloud costs. Experienced in designing Medallion Architecture data warehouses using Spark and Airflow. Certified GCP Professional Data Engineer, Azure Databricks Engineer, and Databricks Data Engineer Associate.}
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-5pt}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        Python, SQL, Unix, Apache Spark, Apache Airflow,  Databricks, Delta Lake, ETL/ELT Pipelines, Data Warehousing, Dimensional Modeling, Batch Data Processing, AWS (S3, EMR, Glue, MSK, EventBridge, Lambda, ECS, Step Functions), Hadoop, Hive, Terraform, CI/CD, Git, PostgreSQL
+    }}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\vspace{-10pt}
+\section{Professional Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Accenture}{Pune, India}
+{Data Engineer}{Sept 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Built and maintained \textbf{15+ automated ETL workflows} using Apache Airflow, delivering curated datasets to \textbf{5+ downstream systems} and enabling real-time analytics for cross-functional business teams}
+\resumeItem{Designed and deployed event-driven data pipelines processing \textbf{50K+ daily events} with sub-minute latency, automating business-critical workflows and eliminating \textbf{20+ hours} of weekly manual processing}
+\resumeItem{Improved data warehouse query performance by \textbf{60\%} and reduced cloud compute costs by \textbf{35\%} through strategic partitioning, clustering, and query optimization on large-scale analytical datasets}
+\resumeItemListEnd
+
+\vspace{5pt}
+
+\resumeSubheading
+{Walkover Inc.}{Indore, India}
+{Data Engineer}{Jan 2024 -- Sept 2024}
+\resumeItemListStart
+\resumeItem{Developed distributed data pipelines using Apache Spark, processing \textbf{10GB+ of daily event data} with fault-tolerant batch processing and automated retry logic}
+\resumeItem{Built and maintained ETL workflows on Hadoop ecosystem, ingesting \textbf{500K+ daily event records} with \textbf{99\% pipeline reliability} through decoupled, idempotent processing stages}
+\resumeItem{Reduced query response time by \textbf{45\%} on high-traffic datasets by redesigning storage layouts with date-based partitioning and optimized data retrieval patterns}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\vspace{-8pt}
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/pvcodes/vlr-analytics}{\underline{VLR Analytics - ETL Pipeline}}} $|$ \emph{Airflow, Terraform, PySpark, BigQuery, Dataproc}}{Jan 2026 -- Feb 2026}
+\resumeItemListStart
+\resumeItem{Engineered a cloud-native ETL pipeline on \textbf{GCP} implementing \textbf{Medallion Architecture} (Bronze-Silver-Gold) to ingest and process competitive gaming records across \textbf{100+ events}}
+\resumeItem{Developed spark transformations on \textbf{Dataproc Serverless} for data quality validation, schema enforcement, and metric calculations, reducing processing time to under 20 minutes}
+\resumeItem{Automated infrastructure provisioning with \textbf{Terraform} and orchestrated workflows using \textbf{Cloud Composer} (Airflow) with \textbf{Pub/Sub} for event-driven processing}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/pvcodes/sales-dwh-databricks-dbt}{\underline{Sales Analytics Data Warehouse}}} $|$ \emph{Databricks, dbt, Delta Lake, SQL}}{Feb 2026 -- April 2026}
+\resumeItemListStart
+\resumeItem{Designed and implemented a \textbf{Medallion Architecture} on \textbf{Databricks Lakehouse}, integrating CRM and ERP data sources into \textbf{Delta Lake} tables with automated ingestion and cleansing pipelines}
+\resumeItem{Built \textbf{dimensional data models} (star schema) using \textbf{dbt Core} with 6 silver transformation models, 3 gold mart models, and \textbf{50+ data quality tests} ensuring data integrity across fact and dimension tables}
+\resumeItem{Orchestrated end-to-end ELT workflows using \textbf{Databricks Workflows}, with auto-generated \textbf{dbt documentation} and lineage tracking for full pipeline observability}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\vspace{-10pt}
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Devi Ahilya Vishwavidyalaya}{Indore, India}
+{Master of Computer Applications (MCA)}{June 2022 -- May 2024}
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\vspace{-5pt}
+\section{Certifications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{\href{https://www.credly.com/badges/9e3dd3b9-698d-48d5-b0f4-f6bc1cd1ac80/public_url}{\underline{Professional Data Engineer}}} \hfill \textit{Google Cloud} \\
+        \textbf{\href{https://credentials.databricks.com/6b76cb8f-07f8-49f5-ac18-f53eea4fe1de#acc.rcBozdJk}{\underline{Databricks Data Engineer Associate}}} \hfill \textit{Databricks} \\
+        \textbf{\href{https://www.credly.com/badges/1f316bcd-9054-4c62-95f2-ad9981a0c87c/public_url}{\underline{Associate Cloud Engineer}}} \hfill \textit{Google Cloud} \\
+        \textbf{\href{https://learn.microsoft.com/api/credentials/share/en-us/pvcodes/9D49A010F0545E8B?}{\underline{Azure Databricks Data Engineer}}} \hfill \textit{Microsoft} \\
+    }}
+\end{itemize}
+
+\end{document}

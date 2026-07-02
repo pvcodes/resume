@@ -120,9 +120,11 @@
 {Accenture}{Pune, India}
 {Data Engineer}{Sept 2024 -- Present}
 \resumeItemListStart
-\resumeItem{Built and maintained \textbf{15+ automated ETL workflows} using Apache Airflow, delivering curated datasets to \textbf{5+ downstream systems} and enabling real-time analytics for cross-functional business teams}
-\resumeItem{Designed and deployed event-driven data pipelines processing \textbf{50K+ daily events} with sub-minute latency, automating business-critical workflows and eliminating \textbf{20+ hours} of weekly manual processing}
-\resumeItem{Improved data warehouse query performance by \textbf{60\%} and reduced cloud compute costs by \textbf{35\%} through strategic partitioning, clustering, and query optimization on large-scale analytical datasets}
+\resumeItem{Migrated \textbf{30+ legacy Ab Initio ETL graphs} to \textbf{PySpark on Azure Databricks} for a UK mortgage risk analytics platform processing \textbf{tens of petabytes} of loan-level data monthly, maintaining \textbf{100\% functional parity} through automated reconciliation with less than \textbf{0.01\% tolerance}}
+\resumeItem{Architected end-to-end pipelines following the \textbf{Medallion Architecture (Bronze/Silver/Gold)} on \textbf{Delta Lake}, implementing \textbf{SCD Type 2} via MERGE INTO for slowly changing dimensions and reducing new data source onboarding from \textbf{weeks to days} through a config-driven framework}
+\resumeItem{Optimized Spark jobs processing \textbf{500GB+ per run} by resolving data skew through salted joins, broadcast optimization, and \textbf{Adaptive Query Execution}, reducing runtime from \textbf{4 hours to 45 minutes} and cutting cluster costs by \textbf{30\%}}
+\resumeItem{Designed a \textbf{layered data quality framework} with schema validation, referential integrity, and business rules across pipeline stages, catching \textbf{15,000+ anomalies monthly} and preventing regulatory reporting errors on a \textbf{GBP 166 billion} mortgage portfolio}
+\resumeItem{Built curated Gold-layer datasets computing \textbf{PD, LGD, EAD} risk metrics and \textbf{IFRS 9 staging} across 4 macroeconomic scenarios, feeding ML models and \textbf{Basel III} regulatory submissions consumed by finance and risk teams}
 \resumeItemListEnd
 
 \vspace{5pt}
